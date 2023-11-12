@@ -1,0 +1,30 @@
+{
+  "name": "freedomain.directory",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^3.4.4",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.3.1",
+    "@astrojs/partytown": "^2.0.2",
+    "astro-compress": "^2.2.3",
+    "astro-compressor": "^0.4.1",
+    "astro-emoji": "^1.2.0",
+    "astro-robots": "^1.0.2",
+    "astro-sitemap": "^1.0.0",
+    "autoprefixer": "^10.4.16",
+    "more-modern-css-reset": "^1.0.0",
+    "open-props": "^1.6.10",
+    "postcss": "^8.4.31",
+    "postcss-jit-props": "^1.0.14"
+  }
+}

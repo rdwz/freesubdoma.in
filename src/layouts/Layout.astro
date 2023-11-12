@@ -1,0 +1,56 @@
+---
+import '~/styles/reset.css'
+import Analytics from '~/components/Analytics.astro'
+import BaseHead from '~/components/BaseHead.astro'
+
+interface Props {
+	title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead {title} />
+		<Analytics token="7797be8d-4452-4a49-8fb8-13251f192b10" />
+	</head>
+	<body>
+		<slot />
+	</body><style is:global>
+		:root {
+			--dark-background-color: #13151a;
+			--light-background-color: #dcdad7;
+			--accent: 131, 50%, 50%;
+			--accent-light: 131, 100%, 67%;
+			--accent-dark: 131, 50%, 30%;
+			--accent-color: hsl(131, 50%, 50%);
+			--accent-light-color: hsl(131, 100%, 67%);
+			--accent-dark-color: hsl(131, 50%, 30%);
+			--accent-green-gradient: linear-gradient(45deg, hsl(131, 50%, 67%), hsl(131, 100%, 67%) 30%, white 60%);
+			--accent-pink-gradient: linear-gradient(45deg, hsl(300, 100%, 35%), hsl(300, 100%, 50%));
+			--color-accent: hsl(var(--accent));
+		}
+
+		html {
+			font-family: system-ui, sans-serif;
+			background: var(--light-background-color);
+		}
+
+		body {
+			margin: 0;
+			min-height: 100dvh;
+		}
+
+		@media (--dark) {
+			html {
+				background: var(--dark-background-color);
+			}
+		}
+
+		code {
+			font-family: var(--font-mono);
+		}
+	</style>
+</html>

@@ -1,0 +1,93 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import Footer from '~/components/Footer.astro'
+import Header from '~/components/Header.astro'
+import Card from '~/components/Card.astro'
+---
+
+<Layout title="Free Domain">
+	<main>
+		<Header />
+		<section>
+			<ul role="list">
+				<Card title="cluster.ws" href="https://cluster.ws" repo="https://github.com/Olivr/free-domain" />
+				<Card title="is-an.app" href="https://is-an.app" repo="https://github.com/tarampampam/free-domains" />
+				<Card title="is-a.dev" href="https://is-a.dev" repo="https://github.com/is-a-dev/register" />
+				<Card title="is-backend.dev" href="https://freesubdomains.org/" repo="https://github.com/free-domains/register" />
+				<Card title="is-cool.dev" href="https://is-cool.dev" repo="https://github.com/open-domains/register" />
+				<Card title="is-frontend.dev" href="https://freesubdomains.org/" repo="https://github.com/free-domains/register" />
+				<Card title="is-fullstack.dev" href="https://freesubdomains.org/" repo="https://github.com/free-domains/register" />
+				<Card title="is-local.dev" href="https://is-local.dev" repo="https://github.com/open-domains/register" />
+				<Card title="is-not-a.dev" href="https://is-not-a.dev" repo="https://github.com/open-domains/register" />
+				<Card title="js.org" href="https://js.org" repo="https://github.com/js-org/js.org" />
+				<Card title="localplayer.dev" href="http://localplayer.dev" repo="https://github.com/open-domains/register" />
+				<Card title="mod.land" href="https://mod.land" repo="https://github.com/denosaurs/mod.land" />
+				<Card title="proj.sbs" href="https://proj.sbs" repo="https://github.com/denosaurs/mod.land" />
+				<Card title="thedev.id" href="https://thedev.id" repo="https://github.com/thedev-id/thedev.id" />
+				<Card title="wip.la" href="https://wip.la" repo="https://github.com/Olivr/free-domain" />
+			</ul>
+			<ul role="list">
+				<Card title="Codeium" href="https://codeium.com?referral_id=eXJlZEB0dXRhLmlv" body="Codeium · Free AI Code Completion &amp; Chat" />
+				<Card title="NextDNS" href="https://nextdns.io/?from=srvrwwnv" body="NextDNS · Firewall for the modern Internet" />
+			</ul>
+		</section>
+		<Footer />
+	</main>
+</Layout>
+
+<style>
+	main {
+		/* color: white; */
+		display: grid;
+		margin: 0 auto;
+		padding: 0 var(--size-3);
+		min-height: 100svh;
+		max-width: calc(100% - var(--size-7));
+		width: 800px;
+	}
+
+	section {
+		margin: 0;
+		padding: 0;
+	}
+
+	h1 {
+		font-size: 4rem;
+		font-weight: var(--font-weight-7);
+		line-height: 1.5;
+		text-align: center;
+		margin-bottom: var(--size-3);
+	}
+
+	.instructions {
+		margin-bottom: var(--size-7);
+		border: 1px solid hsla(var(--accent-light), 25%);
+		background: linear-gradient(hsla(var(--accent-dark), 66%), hsla(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: var(--radius-3);
+	}
+
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: var(--font-weight-7);
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: var(--radius-3);
+		padding: 0.3em 0.4em;
+	}
+
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: var(--size-7);
+		padding: 0;
+	}
+
+	ul:first-child {
+		margin-block-end: 2rem;
+	}
+</style>

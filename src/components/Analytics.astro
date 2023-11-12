@@ -1,0 +1,9 @@
+---
+interface Props {
+	token?: string
+}
+
+const { token } = Astro.props
+---
+
+<script is:inline src="js/beam.min.js" data-token={token} async></script>
