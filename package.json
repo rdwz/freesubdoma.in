@@ -17,7 +17,7 @@
     "@astrojs/check": "^0.3.1",
     "@astrojs/partytown": "^2.0.2",
     "astro-compress": "^2.2.3",
-    "astro-compressor": "^0.4.1",
+    "astro-compressor": "^1.0.0",
     "astro-emoji": "^1.2.0",
     "astro-robots": "^1.0.2",
     "astro-sitemap": "^1.0.0",
