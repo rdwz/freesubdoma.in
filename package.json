@@ -19,7 +19,7 @@
     "astro-compress": "^2.2.3",
     "astro-compressor": "^0.4.1",
     "astro-emoji": "^1.2.0",
-    "astro-robots": "^1.0.2",
+    "astro-robots": "^2.0.0",
     "astro-sitemap": "^1.0.0",
     "autoprefixer": "^10.4.16",
     "more-modern-css-reset": "^1.0.0",
